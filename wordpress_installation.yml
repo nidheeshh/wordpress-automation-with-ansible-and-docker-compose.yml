@@ -11,6 +11,6 @@
       dest: /root/docker
   - name: This commnad will run docker compose file
     shell: docker-compose up -d
-      args:
-        chdir: /root/docker
+    args:
+      chdir: /root/docker
   
