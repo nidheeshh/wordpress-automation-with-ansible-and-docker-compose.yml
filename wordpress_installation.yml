@@ -1,7 +1,7 @@
 ---
 #########
 - name: wordpress installation
-  hosts: web-servers
+  hosts: wordpress
   become: true
   become_method: sudo
   tasks:
