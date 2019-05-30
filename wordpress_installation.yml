@@ -1,0 +1,16 @@
+---
+#########
+- name: wordpress installation
+  hosts: web-servers
+  become: true
+  become_method: sudo
+  tasks:
+  - name: Pull file from source
+    git:
+      repo: 'https://github.com/nidheeshh/docker-compose.git'
+      dest: /root/docker
+  - name: This commnad will run docker compose file
+    command: docker-compose up -d
+      args:
+        chdir: /root/docker
+  
