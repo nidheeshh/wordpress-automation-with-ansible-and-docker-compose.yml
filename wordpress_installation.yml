@@ -10,7 +10,7 @@
       repo: 'https://github.com/nidheeshh/docker-compose.git'
       dest: /root/docker
   - name: This commnad will run docker compose file
-    command: docker-compose up -d
+    shell: docker-compose up -d
       args:
         chdir: /root/docker
   
